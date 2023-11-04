@@ -1,12 +1,51 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Customer Reviews",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Default",
+        "category": "Custom"
+      }
+    ]
   }
 {% endschema %}
 
 {% stylesheet %}
+  /* Add your CSS styles here to style the customer review section */
+  .customer-review {
+    /* Your styling rules */
+  }
+  .star-rating {
+    /* Your styling rules for star ratings */
+  }
 {% endstylesheet %}
 
 {% javascript %}
+  // Add JavaScript logic here if needed
 {% endjavascript %}
+
+<div class="customer-review">
+  <h2>Customer Reviews</h2>
+  <div class="review">
+    <div class="star-rating">
+      <span class="star">&#9733;</span> <!-- You can add more stars for the rating -->
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <p>Great product! I love it. Will definitely buy again.</p>
+  </div>
+
+  <div class="review">
+    <div class="star-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <p>Good quality and fast shipping. Highly recommended.</p>
+  </div>
+</div>
